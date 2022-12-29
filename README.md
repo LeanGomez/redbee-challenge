@@ -8,15 +8,10 @@ minikube addons enable ingress
 # deployando volumenes
 
 kubectl apply -f persistent-volume
+
 kubectl apply -f persistent-volume-claim
 
 # creamos un secret
-
-podemos tomar 2 caminos o lo creamos por consola
-
-kubectl create secret generic sql-password --from-literal=password=Password123
-
-o deployamos el yaml
 
 kubectl apply -f secrets
 
