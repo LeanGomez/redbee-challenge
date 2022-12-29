@@ -19,7 +19,7 @@ spec:
           imagePullPolicy: IfNotPresent
           env:
             - name: DB_HOST
-              value: "redbee-mysql"
+              value: "mysql"
             - name: DB_PORT
               value: "3306"
             - name: DB_USER
